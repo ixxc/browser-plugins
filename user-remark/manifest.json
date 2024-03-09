@@ -1,0 +1,80 @@
+{
+  "name": "用户备注",
+  "version": "1.0",
+  "description": "各类网站用户自定义备注",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://hostloc.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "db.js",
+        "util.js",
+        "common.js",
+        "hostloc.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.nodeseek.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "db.js",
+        "util.js",
+        "common.js",
+        "nodeseek.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.v2ex.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "db.js",
+        "util.js",
+        "common.js",
+        "v2ex.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://linux.do/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "db.js",
+        "util.js",
+        "common.js",
+        "linuxdo.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "./settings/options.html",
+    "open_in_tab": false
+  },
+  "action": {
+    "default_title": "用户备注",
+    "default_icon": "icons/icon.png"
+  },
+  "manifest_version": 3
+}

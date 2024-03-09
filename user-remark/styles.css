@@ -1,0 +1,29 @@
+.remark-menu {
+    position: fixed;
+    top: 25%;
+    left: -135px;
+    width: 130px;
+    background-image: linear-gradient(to right, transparent 90%, rgba(0, 0, 0, 0.1) 10%);
+    padding: 0 10px;
+    font: 12px Tahoma, 'Microsoft Yahei', 'Simsun';
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.remark-menu button {
+    width: 112px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.remark-menu button:hover {
+    background-color: #ccc;
+}
+
+button {
+    font: 12px Tahoma, 'Microsoft Yahei', 'Simsun';
+}
+
+.tips {
+    width: 92%;
+}
