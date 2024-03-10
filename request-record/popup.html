@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            width: 100%;
+            margin: 5px auto;
+        }
+
+        textarea {
+            flex: 1;
+            margin: 0 5px;
+            height: 200px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body style="width:770px;">
+<div class="container">
+    <textarea id="domainTextarea" placeholder="当前标签页面产生的所有请求IP和完整域名" style="height:180px;"></textarea>
+</div>
+<div class="container">
+    <textarea id="urlsListTextarea" placeholder="当前标签页面产生的所有完整原始请求地址" style="height:350px;"></textarea>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

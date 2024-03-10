@@ -1,0 +1,26 @@
+{
+  "name": "网页请求查看",
+  "version": "1.0",
+  "description": "查看当前标签页面所有的请求数据",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "网页请求查看",
+    "default_icon": "icons/icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
