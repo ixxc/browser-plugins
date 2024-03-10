@@ -6,5 +6,6 @@
     - [user-remark 插件](./docs/user-remark.md)
       - [github token 获取](./docs/user-remark.md#github-token-获取)
     - [webrtc-switch 插件](./docs/webrtc-switch.md)
+    - [auto-refresh 插件](./docs/auto-refresh.md)
 
 支持Chrome、Edge浏览器，其他未做测试
