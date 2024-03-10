@@ -1,0 +1,21 @@
+{
+  "name": "自动刷新",
+  "version": "1.0",
+  "description": "按设置时间自动刷新页面",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icons/icon-inactive.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
