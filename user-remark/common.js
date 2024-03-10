@@ -47,12 +47,13 @@ moduleDiv.appendChild(importGithubBtn);
 moduleDiv.appendChild(deleteBtn);
 moduleDiv.appendChild(contentDiv);
 document.body.appendChild(moduleDiv);
-document.addEventListener('mousemove', function (event) {
-    if (event.clientX <= 135 && event.clientY >= moduleDiv.offsetTop && event.clientY <= moduleDiv.offsetTop + moduleDiv.offsetHeight) {
-        moduleDiv.style.left = '0';
-    } else {
-        moduleDiv.style.left = '-135px';
-    }
+
+moduleDiv.addEventListener('mouseenter', function () {
+    moduleDiv.style.left = '0';
+});
+
+moduleDiv.addEventListener('mouseleave', function () {
+    moduleDiv.style.left = '-135px';
 });
 
 function initEvent(dbManager, exportGithubFileName, exportLocalFileName) {
