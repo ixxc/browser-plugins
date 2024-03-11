@@ -52,20 +52,6 @@
         "common.js",
         "v2ex.js"
       ]
-    },
-    {
-      "matches": [
-        "https://linux.do/*"
-      ],
-      "css": [
-        "styles.css"
-      ],
-      "js": [
-        "db.js",
-        "util.js",
-        "common.js",
-        "linuxdo.js"
-      ]
     }
   ],
   "options_ui": {

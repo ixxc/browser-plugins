@@ -5,7 +5,7 @@
   - [如何安装浏览器插件](./docs/browser-plugins-install.md)
 - request-record：网页请求查看插件
   - [文档](./docs/request-record.md)
-- user-remark：用户备注插件，目前支持hostloc，nodeseek
+- user-remark：用户备注插件，目前支持hostloc，nodeseek，v2ex
   - [文档](./docs/user-remark.md)
 - webrtc-switch：WebRTC开关插件
   - [文档](./docs/webrtc-switch.md)
