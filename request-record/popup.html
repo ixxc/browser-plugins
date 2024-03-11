@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <style>
         .container {
-            display: flex;
             justify-content: space-around;
             align-items: stretch;
             width: 100%;
@@ -11,8 +10,7 @@
         }
 
         textarea {
-            flex: 1;
-            margin: 0 5px;
+            width: 100%;
             height: 200px;
             white-space: nowrap;
         }
@@ -20,10 +18,12 @@
 </head>
 <body style="width:770px;">
 <div class="container">
-    <textarea id="domainTextarea" placeholder="当前标签页面产生的所有请求IP和完整域名" style="height:180px;"></textarea>
+    <div>当前标签页产生的所有请求IP和完整域名</div>
+    <textarea id="domainTextarea" style="height:180px;"></textarea>
 </div>
 <div class="container">
-    <textarea id="urlsListTextarea" placeholder="当前标签页面产生的所有完整原始请求地址" style="height:350px;"></textarea>
+    <div>当前标签页产生的所有完整原始请求地址</div>
+    <textarea id="urlsListTextarea" style="height:350px;"></textarea>
 </div>
 <script src="popup.js"></script>
 </body>
