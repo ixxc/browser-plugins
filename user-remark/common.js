@@ -11,6 +11,8 @@ chrome.storage.local.get(['githubReposUrl', 'githubToken', 'githubBranch'], func
 const moduleDiv = document.createElement('div');
 moduleDiv.className = 'remark-menu';
 
+const headline = document.createElement('b');
+
 const exportBtn = document.createElement('button');
 exportBtn.innerText = '导出到本地';
 exportBtn.title = '将浏览器中的数据导出到本地文件';
@@ -25,12 +27,12 @@ importBtn.innerText = '从本地导入';
 importBtn.title = '将本地文件的数据导入到浏览器';
 
 const exportGithubBtn = document.createElement('button');
-exportGithubBtn.innerText = '上传到Github';
-exportGithubBtn.title = '将浏览器中的数据导出并上传到Github仓库';
+exportGithubBtn.innerText = '上传到GitHub';
+exportGithubBtn.title = '将浏览器中的数据导出并上传到GitHub仓库';
 
 const importGithubBtn = document.createElement('button');
-importGithubBtn.innerText = '从Github导入';
-importGithubBtn.title = '将Github仓库的数据下载并导入到浏览器';
+importGithubBtn.innerText = '从GitHub导入';
+importGithubBtn.title = '将GitHub仓库的数据下载并导入到浏览器';
 
 const deleteBtn = document.createElement('button');
 deleteBtn.innerText = '删除全部备注';
@@ -39,6 +41,7 @@ deleteBtn.title = '将浏览器中的备注数据全部删除';
 const contentDiv = document.createElement('div');
 contentDiv.className = 'tips';
 
+moduleDiv.appendChild(headline);
 moduleDiv.appendChild(exportBtn);
 moduleDiv.appendChild(fileInput);
 moduleDiv.appendChild(importBtn);

@@ -1,3 +1,4 @@
+headline.innerText = 'Hostloc数据备份';
 const dbManager = new IndexedDBManager(dbName, 1, 'hostloc');
 initEvent(dbManager, 'HostlocRemark.json', 'HostlocRemark_' + getTimeSuffix() + '.json');
 

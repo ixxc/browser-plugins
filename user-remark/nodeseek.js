@@ -1,3 +1,5 @@
+headline.innerText = 'NodeSeek数据备份';
+headline.style.color = 'var(--link-hover-color)';
 const dbManager = new IndexedDBManager(dbName, 1, 'nodeseek');
 initEvent(dbManager, 'NodeSeekRemark.json', 'NodeSeekRemark_' + getTimeSuffix() + '.json');
 
