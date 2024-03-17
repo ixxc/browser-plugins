@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://hostloc.com/*"
+        "https://hostloc.com/*",
+        "https://*.hostloc.com/*"
       ],
       "css": [
         "styles.css"
@@ -27,7 +28,8 @@
     },
     {
       "matches": [
-        "https://www.nodeseek.com/*"
+        "https://nodeseek.com/*",
+        "https://*.nodeseek.com/*"
       ],
       "css": [
         "styles.css"
@@ -41,7 +43,8 @@
     },
     {
       "matches": [
-        "https://www.v2ex.com/*"
+        "https://v2ex.com/*",
+        "https://*.v2ex.com/*"
       ],
       "css": [
         "styles.css"
